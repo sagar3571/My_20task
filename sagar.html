@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <!-- js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
   <!-- style -->
@@ -20,33 +20,43 @@
 </head>
 
 <body>
-  <canvas id="container" width="200" height="200"></canvas>
-  <button onclick="topFunction()" id="sagartopbtn" class="topbtn" title="Go to top"> Up Top</button>
+  <button onclick="topFunction()" id="sagartopbtn" class="topbtn" title="Go to top"><i
+      class="fa-solid fa-arrow-up"></i></button>
   <!-- header -->
   <header>
-    <div class="header" id="myHeader">
-      <nav class="navbar headered">
-        <div class="container">
-          <h3 class="logo"> MY <span class="spannew">NEW</span> <span class="spantask">TASK</span></h3>
-          <div class="topnav" id="myTopnav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">More option</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#blog">Blog</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-            <a href="#Contect-From">Contect-From</a>
-            <a href="#team-member">team-member</a>
-            <a href="#service">service</a>
-            <a href="#Home">Home</a>
+    <nav class=" header">
+      <div class="header" id="myHeader">
+        <div class="topnav" id="myTopnav">
+          <!-- <h3 class="logo"> MY <span class="spannew">NEW</span> <span class="spantask">TASK</span></h3> -->
+          <div class="sagarlogo">
+            <h1 class="ml5">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters letters-left">MY</span>
+                <span class="letters letters-left">NEW</span>
+                <span class="letters ampersand">&amp;</span>
+                <span class="letters letters-right">WEBSITE</span>
+                <span class="line line2"></span>
+              </span>
+            </h1>
           </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="#Home" class="headnav">Home</a>
+          <a href="#service">service</a>
+          <div class="dropdown">
+            <button onclick="sagarfunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#Portfolio">Portfolio</a>
+              <a href="#blog">blog</a>
+              <a href="#light-box">light-box</a>
+            </div>
+          </div>
+          <a href="#Contect-From">Contect-From</a>
+          <a href="#team-member">team-member</a>
         </div>
-    </div>
+      </div>
     </nav>
   </header>
 
@@ -269,7 +279,7 @@
             <div id="sagarmodal" class="modaled">
               <div class="modaled-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <p>chavda sagar</p>
               </div>
             </div>
           </div>
@@ -297,6 +307,27 @@
           </a>
         </div>
       </div>
+    </section>
+
+    <section>
+      <div class="teamheader">
+        <h1>Searching</h1>
+      </div>
+      <div class="searchbar">
+        <input type="text" id="myInput" onkeyup="sagarsearch()" placeholder="Search for names.." title="Type in a name">
+      </div>
+
+      <ul id="myUL">
+        <li><a href="index.html">Adele</a></li>
+        <li><a href="index.html">Agnes</a></li>
+
+        <li><a href="index.html">Billy</a></li>
+        <li><a href="index.html">Bob</a></li>
+
+        <li><a href="index.html">Calvin</a></li>
+        <li><a href="index.html">Christina</a></li>
+        <li><a href="index.html">Cindy</a></li>
+      </ul>
     </section>
 
     <!-- light box -->
@@ -357,7 +388,7 @@
     <!-- customer review -->
     <section id="customer-review">
 
-      <div class="teamheader">
+      <div class="teamheadered">
         <h1>Customer Review</h1>
       </div>
 
@@ -403,6 +434,9 @@
     </section>
 
     <section id="FAQ">
+      <div class="teamheader">
+        <h1>FAQ</h1>
+      </div>
       <div class="FAQ">
         <button class="accordion">Question 1</button>
         <div class="sagarFAQ">
@@ -447,7 +481,7 @@
     </div>
   </footer>
 
-  <script src="sagar.js"></script>
+  <script src="sagarchavda.js"></script>
 </body>
 
 </html>

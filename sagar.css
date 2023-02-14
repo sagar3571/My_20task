@@ -25,23 +25,69 @@ body {
 
 /* header */
 
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 2.5em;
+  color:aqua;
+  margin-left: 52px;
+  margin-top: 25px;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color:cyan;
+  transform-origin: 0.5 0;
+}
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+.headnav{
+  margin-left: auto;
+}
+
 .topnav {
   background-color: #666;
-  overflow: hidden;
+  display: flex;
+  height: 100px;
+  width: 100%;
+ 
 }
 
 .topnav a {
-  float: right;
-  display: block;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  margin-top: 25px;
+  font-size: 20px;
 }
 
 .topnav a:hover {
-  color: black;
+  color:darkorange;
 }
 
 .topnav a.active {
@@ -51,6 +97,50 @@ body {
 
 .topnav .icon {
   display: none;
+}
+
+.dropbtn {
+  background-color: #666;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #666;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 .sticky {
@@ -64,97 +154,8 @@ body {
   padding-top: 102px;
 }
 
-.headered {
-  height: 100px;
-  background: #666;
-  width: 100%;
-  z-index: 1;
-}
-
-.spannew{
-  color: chartreuse;
-}
-
-.spantask{
-  color: brown;
-}
-.header .logo,
-.navbar a {
-  color: white;
-  text-decoration: none;
-}
-
-.logo {
-  font-size: 45px;
-}
-
-.navbar {
-  padding: 1rem;
-}
-
-.navbar .logo {
-  float: left;
-  font-size: 30px;
-  margin: 15px;
-}
-
-.navbar .nav-items {
-  float: right;
-  margin-top: 1rem;
-}
-
-.nav-items .icon {
-  display: none;
-}
-
-.navbar .nav-item {
-  display: inline-block;
-  padding: 1rem;
-}
-
-.navbar a:link,
-.navbar a.visited {
-  color: #f4f4f4;
-}
-
-.navbar a:hover {
+.header a:hover {
   border-bottom: 3px solid red;
-}
-
-.dropbtn {
-  background-color: #666;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  float:right;
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  right: 0;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: #ddd;
 }
 
 @media screen and (max-width: 800px)
@@ -216,7 +217,6 @@ body {
 }
 
 .boxed:hover {
-
   transform: scale(1.05);
 }
 
@@ -403,7 +403,15 @@ p {
   text-align: center;
   font-size: 25px;
   height: 50px;
-  margin: 30px;
+  margin: 50px;
+  text-shadow: 1px 2px #444;
+}
+
+.teamheadered {
+  text-align: center;
+  font-size: 25px;
+  height: 50px;
+  margin: 20px;
   text-shadow: 1px 2px #444;
 }
 
@@ -600,7 +608,7 @@ input {
   text-align: center;
   text-shadow: 1px 2px #444;
   font-size: 35px;
-  margin: 15px;
+  margin: 50px;
 }
 
 .cardtest {
@@ -641,6 +649,7 @@ input {
   font-size: 45px;
   text-align: center;
   text-shadow: 1px 2px #444;
+  margin: 35px;
 }
 
 .portfolio {
@@ -919,6 +928,11 @@ img.hover-shadow {
   border-radius: 4px;
 }
 
+.fa-arrow-up:hover{
+  font-size: 35px;
+}
+
+
 .topbtn:hover {
   background-color: red;
 }
@@ -928,6 +942,8 @@ img.hover-shadow {
 .FAQ{
   margin-left: 150px;
   margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .accordion {
   background-color: #eee;
@@ -953,27 +969,29 @@ img.hover-shadow {
   overflow: hidden;
 }
 
-/* search bar */
-/* #myInput {
+/* serach bar */
+
+#myInput {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 50%;
   font-size: 16px;
-  padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
+  margin: 30px;
+  height: 50px;
 }
 
 #myUL {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; 
+  margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
@@ -984,4 +1002,73 @@ img.hover-shadow {
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
-} */
+}
+
+.searchbar{
+  width: 100%;
+  margin-left: 380px;
+
+}
+
+/* slider */
+
+.mySlided {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotedd {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.faded {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
