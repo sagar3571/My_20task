@@ -1,223 +1,42 @@
+.required::after {
+    content: "*";
+    color: red;
+}
 
-body{
+.truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    /* Adjust the width as per your requirement */
+}
+
+i {
+    cursor: pointer;
+}
+
+#card img {
     height: 100%;
-    background: linear-gradient(to top,
-     orange 0%,
-     orange 50%,
-      #fff 50%,
-       #fff 0%);
-    background-repeat: no-repeat;
-    margin: 0%;
-    padding: 0%;
-}
-
-/* header */
-
-.header{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 35px;
-    font-size: 35px;
-}
-
-.portfolio{
-   display: flex;
-   justify-content: center;
-}
-
-img{
-    margin: 10px;
-}
-
-.imagefooter{
-    text-align: center;
-}
-
-.top-container {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .header {
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
-  }
-  
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
     width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 102px;
-  }
-
-/* footer */
-
-.footer{
-    width: 100%;
-    height: 80px;
-    background: #333;
-}
-
-.test{
-    text-align: center;
-    padding: 25px;
-    color: white;
-}
-
-#portfolio:focus img{
-    position: absolute;
     object-fit: cover;
-    width: 600px;
-    height: 400px;
+    /* Ensures the image scales correctly without distortion */
 }
 
-/* crad */
-
-.servicecolumn {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-.servicerow {margin: 0 -5px;}
-
-
-.servicerow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .servicecolumn {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-
-.servicecard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-.sagarservice {
-  background-color: #a4c3f5;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-}
-
-.show{
-  display: block !important;
-}
-
-.servicecard {
-  padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
-  background-size: 100% 200%;
-  background-position: 0 2.5%;
-  border-radius: 5px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  transition: 0.5s;
-  margin: 10px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1f194c;
-  margin: 20px;
-}
-
-p {
-  color: #575a7b;
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-}
-
-
-.icon-wrapper {
-  background-color: #2c7bfe;
-  position: relative;
-  margin: auto;
-  font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  color: #ffffff;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
-}
-
-.servicecard:hover {
-  background-position: 0 100%;
-}
-
-.servicecard:hover .icon-wrapper {
-  background-color: #ffffff;
-  color: #2c7bfe;
-}
-
-.servicecard:hover h3 {
-  color: #ffffff;
-}
-
-.servicecard:hover p {
-  color: #f0f0f0;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-}
-
-.sectiontab {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  place-items: center;
-
-}
-
-.section-heading {
-  text-align: center;
-  font-size: 30px;
-  height: 50px;
-  width: 100%;
-  margin: 30px;
-  padding-top: 10px;
-  text-shadow: 1px 2px #444;
-
+/* Optional: Add a fixed size to the card as well */
+#card {
+    display: flex;
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+    height: 150px;
+    /* Adjust as needed */
+    width: 255px;
+    /* Adjust as needed */
+    border: 1px solid #ccc;
+    /* Optional styling for the card */
+    padding: 10px;
+    /* Optional padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
 }

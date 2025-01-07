@@ -1,0 +1,36 @@
+{
+  "name": "electron-tracker",
+  "version": "1.0.0",
+  "description": "sagar",
+  "license": "ISC",
+  "author": "sagar",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "asarUnpack": "**/*"
+  },
+  "devDependencies": {
+    "7zip-bin": "^5.2.0",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "electron-fetch": "^1.9.1",
+    "electron-store": "^10.0.0",
+    "express": "^4.21.2",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.7.0",
+    "node-global-key-listener": "^0.3.0",
+    "play-sound": "^1.1.6",
+    "ref-napi": "^3.0.3",
+    "screenshot-desktop": "^1.15.1",
+    "sharp": "^0.33.5"
+  },
+  "keywords": []
+}

@@ -2,143 +2,188 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="content" content="adventure-park, new-park, ride, dinosaurs">
-  <meta name="keyword" content="html, css, icon, adventure-park, new-park, ride, dinosaurs">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style css -->
-  <link rel="stylesheet" href="style.css">
-  <title>new templete</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workit Consultant Tracker</title>
+    <link rel="icon" type="image/png" href="https://qa.workitconsultants.in/assets/img/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
-
- 
-
-  <div class="header">
-    <h2>Our Portfolio</h2>
-  </div>
-
-
-  <!-- image -->
-  <div class="image">
-    <div class="portfolio">
-      <a href="" id="portfolio">
-        <img src="./img/i1.jpg" width="350" height="300" alt="dinosaurs">
-      </a>
-        <a href="" id="portfolio">
-        <img src="./img/i2.jpg" width="350" height="300" alt="dinosaurs">
-      </a>
-      <a href="" id="portfolio">
-        <img src="./img/i3.jpeg" width="350" height="300" alt="roller">
-      </a>
-    </div>
-    <div class="portfolio">
-      <a href="" id="portfolio">
-        <img src="./img/i4.jpg" width="350" height="300" alt="roller">
-      </a>
-      <a href="" id="portfolio">
-        <img src="./img/i5.jpeg" width="350" height="300" alt="roller">
-      </a>
-      <a href="" id="portfolio">
-        <img src="./img/i6.jpeg" width="350" height="300" alt="dinosaurs">
-      </a>
-    </div>
-    <div class="portfolio">
-      <a href="" id="portfolio">
-        <img src="./img/i1.jpg" width="350" height="300" alt="park">
-      </a>
-      <a href="" id="portfolio">
-        <img src="./img/i2.jpg" width="350" height="300" alt="adv park">
-      </a>
-      <a href="" id="portfolio">
-        <img src="./img/i3.jpeg" width="350" height="300" alt="roller">
-      </a>
+<body class="bg-gray-50  h-screen">
+    <!-- loader -->
+    <div id="loader" class="hidden fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50 z-50">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     </div>
 
-    <div class="imagefooter">
-      <h5>image from</h5>
-    </div>
-
-    <section class="sectiontab" id="service">
-
-      <div class="servicerow">
-        
-        <div class="servicecolumn">
-          <div class="servicecard">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+    <!-- login form -->
+    <div class="container max-w-md mx-auto p-6 rounded-lg" id="login-form">
+        <div class="text-center mb-8">
+            <img src="https://qa.workitconsultants.in/assets/img/workit-logo-svg.svg" width="135" height="135"
+                alt="Workit Logo" class="mx-auto mb-4">
+        </div>
+        <form id="login-form" class="space-y-4 mx-2.5">
+            <div class="form-group">
+                <label for="email" class="form-label font-sm text-gray-700 required">Email Address</label>
+                <input type="email" id="email"
+                    class="form-control w-full px-2 py-0.5 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
             </div>
-            <h3>Service Heading</h3>
-            <button class="sagarservice" id="sagarservice">More Decription</button>
-            <p class="panel">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-      
-        <div class="servicecolumn">
-          <div class="servicecard">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+
+            <div class="form-group">
+                <label for="password" class="form-label font-sm text-gray-700 required">Password</label>
+                <input type="password" id="password"
+                    class="form-control w-full px-2 py-0.5 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
             </div>
-            <h3>Service Heading</h3>
-            <button class="sagarservice" id="sagarservice">More Decription</button>
-            <p class="panel">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        
-        <div class="servicecolumn">
-          <div class="servicecard">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+
+            <div class="text-center mt-5 mx-4">
+                <button type="submit"
+                    class="btn btn-primary w-full py-0.5 px-4 rounded-md bg-blue-600 text-white text-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Login</button>
             </div>
-            <h3>Service Heading</h3>
-            <button class="sagarservice" id="sagarservice">More Decription</button>
-            <p class="panel">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        
-        <div class="servicecolumn">
-          <div class="servicecard">
-            <h3>Card 4</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
+        </form>
+        <p id="message" class="text-center text-sm text-red-600 mt-4">Please enter your login credentials</p>
+    </div>
+
+    <div id="allShowProjectData" class="hidden">
+        <div id="hiddenSearchGetData" class="container max-w-md mx-auto p-3 border-b border-gray-300">
+            <div class="d-flex justify-between">
+                <div class="relative col-11">
+                    <input type="text" id="allProjetSearch"
+                        class="form-control w-full ps-2 pe-[2.2rem] py-0.5 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 pl-10"
+                        placeholder="Search">
+                    <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 "></i>
+                </div>
+                <div class="col-1 ms-2 my-auto">
+                    <i class="fa-solid fa-arrow-rotate-right text-blue-500" onclick="window.location.reload()"></i>
+                </div>
+            </div>
         </div>
 
-        <div class="servicecolumn">
-          <div class="servicecard">
-            <h3>Card 3</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
+        <div id="allShowProjectMultipleData" class="hidden">
+            <!-- Dynamic content will be injected here -->
         </div>
-        
-        <div class="servicecolumn">
-          <div class="servicecard">
-            <h3>Card 4</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
+    </div>
+
+    <div id="showProjectPerticularData" class="hidden">
+        <!-- Dynamic content will be injected here -->
+    </div>
+
+
+    <!-- Footer section (fixed at the bottom) -->
+    <div id="footerLoginNotShow" class="absolute  bottom-0 left-0 right-0">
+        <div class="flex justify-between border-t border-gray-300 p-3">
+            <i class="fa-solid fa-gear text-blue-500 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <span id="userFirstName"
+                class="font-bold my-auto pb-1 truncate w-full text-sm text-gray-700 text-center mx-4"></span>
+            <i class="fa-solid fa-power-off ms-2 text-red-500 fs-4 my-auto" id="logout-btn"></i>
         </div>
-      </div>
-    </section> 
+    </div>
 
-    <!-- footer -->
-    <footer class="footer">
-      <p class="test">this page is test page </p>
-    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header py-2 px-3">
+                    <div class="d-flex">
+                        <i class="fa-solid  fa-arrow-left text-sm my-auto pt-1" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
+                        <h1 class="modal-title ms-2 text-center text-sm my-auto">Settings</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex overflow-x-auto w-[88vw] text-nowrap" style="scrollbar-width: none;">
+                        <ul class="nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
+                            <!-- Screen capture Tab -->
+                            <li class="nav-item me-2" role="presentation">
+                                <button id="pills-Screencapture-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Screencapture" type="button" role="tab"
+                                    aria-controls="pills-Screencapture" aria-selected="true"
+                                    class="rounded-pill btn btn-outline-primary btn-sm active">
+                                    Screen capture
+                                </button>
+                            </li>
+                            <!-- TimeZones Tab -->
+                            <li class="nav-item me-2" role="presentation">
+                                <button id="pills-timeZone-tab" data-bs-toggle="pill" data-bs-target="#pills-timeZone"
+                                    type="button" role="tab" aria-controls="pills-timeZone" aria-selected="false"
+                                    class="rounded-pill btn btn-outline-primary btn-sm">
+                                    TimeZones
+                                </button>
+                            </li>
+                            <!-- Camera Tab -->
+                            <li class="nav-item me-2" role="presentation">
+                                <button id="pills-camera-tab" data-bs-toggle="pill" data-bs-target="#pills-camera"
+                                    type="button" role="tab" aria-controls="pills-camera" aria-selected="false"
+                                    class="rounded-pill btn btn-outline-primary btn-sm">
+                                    Camera
+                                </button>
+                            </li>
+                            <!-- reminders -->
+                            <li class="nav-item me-2" role="presentation">
+                                <button id="pills-reminders-tab" data-bs-toggle="pill" data-bs-target="#pills-reminders"
+                                    type="button" role="tab" aria-controls="pills-reminders" aria-selected="false"
+                                    class="rounded-pill btn btn-outline-primary btn-sm">
+                                    Reminders
+                                </button>
+                            </li>
+                            <!-- advanced -->
+                            <li class="nav-item" role="presentation">
+                                <button id="pills-advanced-tab" data-bs-toggle="pill" data-bs-target="#pills-advanced"
+                                    type="button" role="tab" aria-controls="pills-advanced" aria-selected="false"
+                                    class="rounded-pill btn btn-outline-primary btn-sm">
+                                    Advanced
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-Screencapture" role="tabpanel"
+                            aria-labelledby="pills-Screencapture-tab" tabindex="0">
+                            <div class="w-full h-full">
+                                <iframe src="./screenCapture.html" width="100%" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-timeZone" role="tabpanel"
+                            aria-labelledby="pills-timeZone-tab" tabindex="0">
+                            <h1>2</h1>
+                        </div>
+                        <div class="tab-pane fade" id="pills-camera" role="tabpanel" aria-labelledby="pills-camera-tab"
+                            tabindex="0">
+                            <h3>3</h3>
+                        </div>
+                        <div class="tab-pane fade" id="pills-reminders" role="tabpanel"
+                            aria-labelledby="pills-reminders-tab" tabindex="0">
+                            <h3>4</h3>
+                        </div>
+                        <div class="tab-pane fade" id="pills-advanced" role="tabpanel"
+                            aria-labelledby="pills-advanced-tab" tabindex="0">
+                            <h3>5</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="sagarchavda.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <!--  -->
+    <!-- Renderer Script -->
+    <script src="./renderer.js"></script>
+    <!-- showProject Script -->
+    <script type="module" src="./showProject.js"></script>
+    <!-- Main Script -->
+    <script src="./main.js"></script>
+    <!--  -->
 </body>
 
 </html>
